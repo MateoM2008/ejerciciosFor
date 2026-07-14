@@ -10,17 +10,23 @@
 
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     min-height:100vh;
+
     display:flex;
+    flex-direction:column;   /* <-- Todos en columna */
+
     justify-content:center;
     align-items:center;
-    padding:25px;
 
-    /* Fondo tecnológico */
+    gap:25px;
+
+    padding:30px;
+
     background:
-    radial-gradient(circle at top,#00e5ff22,transparent 40%),
-    radial-gradient(circle at bottom,#00ff9d22,transparent 40%),
-    linear-gradient(135deg,#040814,#081b29,#02060f);
+        radial-gradient(circle at top,#00e5ff22,transparent 40%),
+        radial-gradient(circle at bottom,#00ff9d22,transparent 40%),
+        linear-gradient(135deg,#040814,#081b29,#02060f);
 
     color:#fff;
 }
@@ -235,4 +241,17 @@ tbody td{
         0 0 40px #00ffff;
 
     transform:scale(1.08);
+}
+/*==============================
+      PANEL SUPERIOR
+===============================*/
+
+.panel{
+    width:100%;
+    max-width:750px;
+}
+
+.contenedor-tabla{
+    width:100%;
+    max-width:750px;
 }
