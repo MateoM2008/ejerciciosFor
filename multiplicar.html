@@ -11,86 +11,105 @@
 
 
 
-    <body>
+<body>
 
-        <div class="panel">
+    <div class="panel">
 
-            <button class="btn-probar" onclick="generarTablas();">
-                PROBAR
-            </button>
+        <button class="btn-probar" onclick="generarTablas();">
+            PROBAR
+        </button>
+        <div class="instrucciones">
+            <h2>¿Cómo usar la aplicación?</h2>
 
+            <ol>
+                <li>Escribe un número de tabla (por ejemplo: 7).</li>
+                <li>Haz clic en el botón <strong>PROBAR</strong>.</li>
+                <li>La tabla de multiplicar aparecerá debajo.</li>
+            </ol>
         </div>
+        <div class="entrada">
 
-        <!-- ESTE CONTENEDOR SOLO ES PARA LA TABLA -->
-        <div class="contenedor-tabla">
+            <label for="txtTabla">Número de la tabla</label>
 
-            <table>
-
-                 <thead>
-                        <tr>
-                            <th>Operación</th>
-                            <th>Resultado</th>
-                        </tr>
-                    </thead>
-
-                <tbody id="tblResultado">
-                   
-
-                    <tr>
-                        <td>3 × 1</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 2</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 4</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 5</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 6</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 7</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 8</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 9</td>
-                        <td>27</td>
-                    </tr>
-                    <tr>
-                        <td>3 × 10</td>
-                        <td>30</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-        <footer class="footer">
-            <p>
-                Creado por:
-                <span class="autor">Mateo Muñoz</span>
+            <input type="number" id="txtTabla" placeholder="Numero de tabla">
+            <p class="ayuda">
+                Ingresa un número para tu tabla de multiplicar.
             </p>
-        </footer>
 
-    </body>
+        </div>
+
+    </div>
+
+    <!-- ESTE CONTENEDOR SOLO ES PARA LA TABLA -->
+    <div class="contenedor-tabla">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Operación</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+
+            <tbody id="tblResultado">
+
+
+                <tr>
+                    <td>3 × 1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3 × 2</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>3 × 3</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>3 × 4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3 × 5</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>3 × 6</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>3 × 7</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>3 × 8</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>3 × 9</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>3 × 10</td>
+                    <td>30</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <footer class="footer">
+        <p>
+            Creado por:
+            <span class="autor">Mateo Muñoz</span>
+        </p>
+    </footer>
+
+</body>
 
 
 

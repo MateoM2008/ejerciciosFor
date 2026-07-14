@@ -255,3 +255,175 @@ tbody td{
     width:100%;
     max-width:750px;
 }
+/*==============================
+      CAJA DE TEXTO
+==============================*/
+
+.entrada{
+
+    margin:25px 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.entrada label{
+
+    color:#00ffff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    text-shadow:0 0 10px cyan;
+}
+
+.entrada input{
+
+    width:220px;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#00ffff;
+
+    background:#071423;
+
+    border:2px solid #00ffff55;
+
+    box-shadow:
+        0 0 10px rgba(0,255,255,.3),
+        inset 0 0 10px rgba(0,255,255,.15);
+
+    transition:.3s;
+}
+
+.entrada input::placeholder{
+
+    color:#7bbcc8;
+}
+
+.entrada input:focus{
+
+    border-color:#00ffff;
+
+    box-shadow:
+        0 0 20px cyan,
+        inset 0 0 12px rgba(0,255,255,.2);
+
+    transform:scale(1.03);
+}
+/*=========================
+   INSTRUCCIONES
+==========================*/
+
+.instrucciones{
+
+    background:rgba(0,255,255,.08);
+
+    border:1px solid rgba(0,255,255,.35);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    color:white;
+}
+
+.instrucciones h2{
+
+    color:#00ffff;
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+}
+
+.instrucciones ol{
+
+    padding-left:22px;
+
+    line-height:1.8;
+}
+
+.ayuda{
+
+    margin-top:8px;
+
+    text-align:center;
+
+    color:#9fe8ff;
+
+    font-size:14px;
+
+    font-style:italic;
+}
+@media (max-width:768px){
+
+    body{
+
+        padding:15px;
+    }
+
+    .panel,
+    .contenedor-tabla{
+
+        width:100%;
+    }
+
+    .entrada input{
+
+        width:100%;
+        max-width:300px;
+    }
+
+    .btn-probar{
+
+        font-size:15px;
+        padding:14px;
+    }
+
+    table{
+
+        font-size:14px;
+    }
+
+    .instrucciones{
+
+        padding:15px;
+    }
+
+    .instrucciones h2{
+
+        font-size:18px;
+    }
+
+    .ayuda{
+
+        font-size:13px;
+    }
+}
