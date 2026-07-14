@@ -3,18 +3,13 @@ function listaNumeros() {
         console.log(i);
     }
 }
-function ejecutar(numEjercicio) {
-    if (numEjercicio == 1) {
-        listaNumeros();
-    } else if (numEjercicio == 2) {
-        listaNumerosReversa();
-    } else if (numEjercicio == 3) {
-        listaNumerospares();
-    } else if (numEjercicio == 4) {
-        listarImpares();
+function ejecutar(numEjercicio) {  
+    switch(numEjercicio){
+        case 1: listaNumeros(); break
+        case 2: listaNumerosReversa(); break
+        case 3: listaNumerospares(); break
+        case 4: listarImpares();break
     }
-    
-    
 }
 
 function listaNumerosReversa() {

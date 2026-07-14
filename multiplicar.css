@@ -1,0 +1,238 @@
+/* ==========================
+   ESTILO TECNOLÓGICO
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+
+    /* Fondo tecnológico */
+    background:
+    radial-gradient(circle at top,#00e5ff22,transparent 40%),
+    radial-gradient(circle at bottom,#00ff9d22,transparent 40%),
+    linear-gradient(135deg,#040814,#081b29,#02060f);
+
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:520px;
+
+    background:rgba(10,20,40,.78);
+    backdrop-filter:blur(12px);
+
+    border:2px solid #00e5ff55;
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:
+    0 0 15px #00e5ff55,
+    0 0 35px #00e5ff22,
+    inset 0 0 20px #00e5ff15;
+}
+
+/*============== BOTÓN ==============*/
+
+.btn-probar{
+    width:100%;
+    padding:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:linear-gradient(90deg,#00c6ff,#00ffb7);
+
+    color:#02111f;
+    font-weight:bold;
+    font-size:17px;
+    letter-spacing:2px;
+
+    cursor:pointer;
+    transition:.35s;
+    text-transform:uppercase;
+
+    box-shadow:
+    0 0 15px #00e5ff,
+    0 0 35px #00ffb7;
+}
+
+.btn-probar:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+    box-shadow:
+    0 0 25px #00e5ff,
+    0 0 45px #00ffb7;
+}
+
+/*============== TITULO ==============*/
+
+h1{
+
+    text-align:center;
+    margin:25px 0;
+
+    font-size:32px;
+
+    text-transform:uppercase;
+
+    color:#00ffff;
+
+    letter-spacing:4px;
+
+    text-shadow:
+    0 0 10px cyan,
+    0 0 25px cyan;
+}
+
+/*============== TABLA ==============*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:12px;
+}
+
+thead{
+
+    background:linear-gradient(90deg,#00c6ff,#00ff9d);
+}
+
+thead th{
+
+    color:#02131e;
+
+    font-size:17px;
+
+    padding:15px;
+}
+
+tbody td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border:1px solid #00ffff33;
+
+    transition:.3s;
+
+    color:#ffffff;
+}
+
+tbody tr{
+
+    background:#081524;
+}
+
+tbody tr:nth-child(even){
+
+    background:#0b1f34;
+}
+
+tbody tr:hover{
+
+    background:#123d5f;
+
+    transform:scale(1.01);
+
+    box-shadow:0 0 12px cyan inset;
+}
+
+/*============== RESPONSIVE ==============*/
+
+@media(max-width:600px){
+
+.container{
+
+    padding:20px;
+}
+
+h1{
+
+    font-size:25px;
+}
+
+thead th,
+tbody td{
+
+    padding:10px;
+
+    font-size:14px;
+}
+
+.btn-probar{
+
+    font-size:15px;
+}
+}
+/*==============================
+        FOOTER TECNOLÓGICO
+==============================*/
+
+.footer{
+    margin-top:30px;
+    text-align:center;
+    padding-top:20px;
+    border-top:1px solid rgba(0,255,255,.25);
+}
+
+.footer p{
+    color:#9adfff;
+    font-size:15px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.autor{
+    display:inline-block;
+    margin-left:8px;
+    padding:6px 14px;
+
+    color:#00ffff;
+    font-weight:bold;
+    font-size:17px;
+
+    border:1px solid #00ffff;
+    border-radius:30px;
+
+    background:rgba(0,255,255,.08);
+
+    text-shadow:
+        0 0 8px #00ffff,
+        0 0 18px #00ffff;
+
+    box-shadow:
+        0 0 10px rgba(0,255,255,.5),
+        inset 0 0 10px rgba(0,255,255,.2);
+
+    transition:.35s;
+}
+
+.autor:hover{
+    background:#00ffff;
+    color:#03121d;
+
+    box-shadow:
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+
+    transform:scale(1.08);
+}
